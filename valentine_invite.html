@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Raghad ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/mnt/data/IMG_6074.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff4d6d;
+        }
+        p {
+            font-size: 18px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #yesButton {
+            background-color: #ff4d6d;
+        }
+        #noButton {
+            background-color: #d43f5e;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        let yesSize = 18;
+        let noSize = 18;
+        function yesClicked() {
+            document.body.innerHTML = '<h1 style="color: #ff4d6d;">I knew you wouldn\'t let me down, Raghad! ❤️</h1>' + 
+                                      '<h2 style="color: #ff4d6d;">I love you so much, Raghad! 😘🥰💖💕💘💞💓💗</h2>' +
+                                      '<p style="font-size: 20px; color: #ff4d6d;">You are the most special person in my life, and I can\'t wait to celebrate with you! 💕</p>';
+        }
+        function noClicked() {
+            alert('Are you sure, Raghad? Think again... 😢');
+            yesSize += 5;
+            noSize -= 2;
+            document.getElementById('yesButton').style.fontSize = yesSize + 'px';
+            document.getElementById('noButton').style.fontSize = noSize + 'px';
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <h1>Raghad, Will You Be My Valentine? ❤️</h1>
+        <p>You make my world brighter every day, Raghad. So, will you be my Valentine?</p>
+        <div class="buttons">
+            <button id="yesButton" onclick="yesClicked()">Yes</button>
+            <button id="noButton" onclick="noClicked()">No</button>
+        </div>
+    </div>
+</body>
+</html>
